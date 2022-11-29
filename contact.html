@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>contact</title>
+    <script src="./js/script.js"></script>
+
+</head>
+   <header id="nav" class="nav" style="background-color: white ;">
+    <h1>S a n t i a g o  |  P u l i d o</h1>
+    <label class="switch">
+        <input onchange="modo2()" type="checkbox">
+        <div class="slider round"></div>
+    </label>
+    <a id="nav6" class="nav3" href="index.html"><div class="home">Inicio</div></a>
+    <a id="nav7" class="nav3" href="contact.html"><div class="ContactMe">Contact Me</div></a>
+</header> 
+
+<body id="body" class="body" style="display:flex ; align-items: center; justify-content: center;  background-color: white;">
+    
+
+        <div id="contact" class="contact" style="margin-top: 150px ;">
+            <h1>Contact me</h1>
+            <form action="mailto:direccion@correo.com" method="post" enctype="text/plain" id="frm">
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="number" id="phone" placeholder="Phone" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input class="message" type="text" id="date" placeholder="text" required /><br>
+                <button type="submit" style="margin-left: 36% ;">Enviar</button>
+            </form>
+    
+         </div>
+</body>
+</html>

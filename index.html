@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Santiago Pulido</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos/aos.css" />
+    <link rel="stylesheet" href="/estilos/style.css"/>
+    <script src="./js/script.js"></script>
+</head>
+<body id="body" style="background-color: white ;">
+   <header id="nav" class="nav" style="background-color: white ;">
+    <h1>S a n t i a g o  |  P u l i d o</h1>
+    <label class="switch">
+        <input onchange="cambiarModo()" type="checkbox">
+        <div  class="slider round"></div>
+      </label>
+    <a id="nav3" class="nav3" href="#homeB"><div class="home">Inicio</div></a>
+    <a id="nav4" class="nav3" href="#galeryB"><div class="galery">Tienda</div></a>
+    <a id="nav5" class="nav3" href="contact.html"><div class="ContactMe">Contact Me</div></a>
+    <button id="btn-cart" class="btn-cart" onclick="myFunction()"></button>
+    <div id="myDIV" style="background-color: white; display: none; max-width: 200px; max-height: 500px; word-wrap: break-word;
+    ">
+
+        <!-- Carrito -->
+        <div id="col-sm-4" class="col-sm-4" style="max-width:none ; background-color: white;  max-height: 400px;">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>$</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </div>
+    </div>
+   </header> 
+   <div id="homeB" class="homeB">
+   
+
+                        <h2 style="margin-bottom: 50px ;"> <strong> Portafolio </strong></h3>
+         <p style="font-size: 22px;">Brayan Arevalo - Nasly Chipo - Juan Diego Echeverry - Santiago Pulido 
+
+         </p>
+   </div>
+    <div class="container">
+        <div id="galeryB" class="row">
+            <!-- Elementos generados a partir del JSON -->        
+            <main id="items" class="container"></main>
+   
+
+
+    
+     
+    </div>
+    </div>
+    
+     
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+        
+</script> 
+<script>AOS.init();</script>
+</html>
